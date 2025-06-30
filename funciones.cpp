@@ -12,3 +12,11 @@ void mostrar_camisetas(camisetas arr[], int &n1) {
              << setw(10) << arr[i].cantidad << endl;
     }
 }
+void agregar_camisetas(camisetas arr[], int &n1) {
+    cout << "Ingrese modelo: "; cin >> arr[n1].modelo;
+    cout << "Ingrese talla: "; cin >> arr[n1].talla;
+    cout << "Ingrese marca: "; cin >> arr[n1].marca;
+    cout << "Ingrese precio: "; cin >> arr[n1].precio;
+    cout << "Ingrese cantidad: "; cin >> arr[n1].cantidad;
+    n1++;
+}
