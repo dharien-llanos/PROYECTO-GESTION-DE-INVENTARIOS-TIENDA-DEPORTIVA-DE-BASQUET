@@ -27,3 +27,24 @@ struct zapatillas {
     double precio;
     int cantidad;
 };
+struct medias {
+    string color;
+    string talla;
+    string marca;
+    double precio;
+    int cantidad;
+};
+
+struct balones {
+    string color;
+    string tamano;
+    string marca;
+    double precio;
+    int cantidad;
+};
+
+struct ventas {
+    double precio_total = 0;
+};
+
+#endif
