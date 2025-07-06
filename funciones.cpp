@@ -62,4 +62,54 @@ void mostrar_medias(medias arr[], int &n5)
         <<setw(15)<<arr[i].precio<<"\t"\
         <<setw(15)<<arr[i].cantidad<<endl;
     }
+
+}
+
+void mostrar_balones(balones arr[], int &n6)
+{
+	cout<<"N.\t"<<setw(16)<<"COLOR"<<setw(17)<<"TAMANO"<<setw(14)<<"MARCA"<<setw(18)<<"PRECIO"<<setw(17)<<"CANTIDAD"<<endl;
+	cout<<"--------------------------------------------------------------------------------------------"<<endl;
+	for(int i=0; i<n6; i++)
+	{
+		cout<<i+1<<"\t"\
+		<<setw(15)<<arr[i].color<<"\t"\
+		<<setw(15)<<arr[i].tamano<<"\t"\
+		<<setw(15)<<arr[i].marca<<"\t"\
+		<<setw(15)<<arr[i].precio<<"\t"\
+		<<setw(15)<<arr[i].cantidad<<endl;
+	}
+}
+
+void agregar_camisetas(camisetas arr[], int &n1)
+{
+	cout<<"ingrese el modelo: "; cin>>arr[n1].modelo;
+	cout<<"ingrese la talla: "; cin>>arr[n1].talla;
+	cout<<"ingrese la marca:"; cin>>arr[n1].marca;
+	cout<<"ingrese precio: "; cin>>arr[n1].precio;
+	cout<<"ingrese la cantidad:"; cin>>arr[n1].cantidad;
+	n1++;
+	system("cls");
+}
+
+void agregar_shorts(shorts arr[], int &n2)
+{
+	cout<<"ingrese color: "; cin>>arr[n2].color;
+	cout<<"ingrese la talla: "; cin>>arr[n2].talla;
+	cout<<"ingrese la marca:"; cin>>arr[n2].marca;
+	cout<<"ingrese precio: "; cin>>arr[n2].precio;
+	cout<<"ingrese la cantidad:"; cin>>arr[n2].cantidad;
+	n2++;
+	system("cls");
+}
+
+void agregar_zapatillas(zapatillas arr[], int &n3)
+{
+	cout<<"ingrese color: "; cin>>arr[n3].color;
+	cout<<"ingrese la talla: "; cin>>arr[n3].talla;
+	cout<<"ingrese la marca:"; cin>>arr[n3].marca;
+	cout<<"ingrese precio: "; cin>>arr[n3].precio;
+	cout<<"ingrese la cantidad:"; cin>>arr[n3].cantidad;
+	n3++;
+	system("cls");
+
 }
