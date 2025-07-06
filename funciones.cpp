@@ -33,6 +33,7 @@ void mostrar_shorts(shorts arr[], int &n2)
         <<setw(15)<<arr[i].cantidad<<endl;
     }
 }
+
 void mostrar_zapatillas(zapatillas arr[], int &n3)
 {
     cout<<"N.\t"<<setw(16)<<"COLOR"<<setw(17)<<"TALLA"<<setw(14)<<"MARCA"<<setw(18)<<"PRECIO"<<setw(17)<<"CANTIDAD"<<endl;
@@ -61,6 +62,7 @@ void mostrar_medias(medias arr[], int &n5)
         <<setw(15)<<arr[i].precio<<"\t"\
         <<setw(15)<<arr[i].cantidad<<endl;
     }
+
 }
 
 void mostrar_balones(balones arr[], int &n6)
@@ -109,4 +111,5 @@ void agregar_zapatillas(zapatillas arr[], int &n3)
 	cout<<"ingrese la cantidad:"; cin>>arr[n3].cantidad;
 	n3++;
 	system("cls");
+
 }
