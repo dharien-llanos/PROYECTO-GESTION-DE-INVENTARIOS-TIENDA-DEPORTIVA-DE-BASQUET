@@ -113,3 +113,25 @@ void agregar_zapatillas(zapatillas arr[], int &n3)
 	system("cls");
 
 }
+
+void agregar_medias( medias arr[], int &n5)
+{
+	cout<<"ingrese color: "; cin>>arr[n5].color;
+	cout<<"ingrese la talla: "; cin>>arr[n5].talla;
+	cout<<"ingrese la marca:"; cin>>arr[n5].marca;
+	cout<<"ingrese precio: "; cin>>arr[n5].precio;
+	cout<<"ingrese la cantidad:"; cin>>arr[n5].cantidad;
+	n5++;
+	system("cls");
+}
+
+void agregar_balones(balones arr[], int &n6)
+{
+	cout<<"ingrese color: "; cin>>arr[n6].color;
+	cout<<"ingrese la tamano: "; cin>>arr[n6].tamano;
+	cout<<"ingrese la marca:"; cin>>arr[n6].marca;
+	cout<<"ingrese precio: "; cin>>arr[n6].precio;
+	cout<<"ingrese la cantidad:"; cin>>arr[n6].cantidad;
+	n6++;
+	system("cls");
+}
