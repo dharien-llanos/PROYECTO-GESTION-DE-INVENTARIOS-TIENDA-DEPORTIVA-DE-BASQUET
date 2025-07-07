@@ -135,3 +135,39 @@ void agregar_balones(balones arr[], int &n6)
 	n6++;
 	system("cls");
 }
+
+void mostar_menu_principal( ){
+	cout << "---------------------------------------------------------------------" << endl;
+    cout << "                     ACTUALIZAR DATOS DE UN PRODUCTO                 " << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    cout << "1. Camisetas" << endl;
+    cout << "2. Shorts" << endl;
+    cout << "3. Zapatillas" << endl;
+    cout << "4. Medias" << endl;
+    cout << "5. Balones" << endl;
+    cout << "0. Atrás" << endl;
+    cout << "\n_____________________________________________________________________" << endl;
+}
+
+
+void submenu_actualizar_camisetas(camisetas camiseta[], int& n1){
+	int indice_actualizar;
+	cout << "--------------------------------------------------------------------------------------------" << endl;
+    cout << "                                       ACTUALIZAR CAMISETA                                  " << endl;
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+    mostrar_camisetas(camiseta, n1);
+    cout << endl;
+    cout << "____________________________________________________________________________________________" << endl;
+    cout << "\nIngrese el numero del producto a actualizar: ";
+    cin  >> indice_actualizar;
+    cout << "_____________________________________________________________________" << endl;
+    cout << endl;
+    system("cls");
+    if (indice_actualizar >= 0 && indice_actualizar <= n1){
+        actualizar_camisetas(camiseta, n1, indice_actualizar);
+    } else {
+        cout << "_______________________________________________________________________" << endl;
+        cout << "\n       El NUMERO QUE INGRESO NO EXISTE EN EL SISTEMA ACTUALMENTE     " << endl;
+        cout << "\n                    INTENTELO NUEVAMENTE POR FAVOR                   " << endl;
+    }
+}
