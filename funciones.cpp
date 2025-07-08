@@ -361,3 +361,74 @@ void actualizar_zapatillas(zapatillas arr[], int &n3, int indice){
 	 system("cls");
 	 cout << "\n         EL PRODUCTO HA SIDO ACTUALIZADO CORRECTAMENTE               " << endl;	
 }
+void actualizar_medias(medias arr[], int &n5, int indice){
+	
+	if (indice <0|| indice > n5 ){
+	cout << "              El indice no existe en el sistema.                      " << endl;
+	return;
+	}
+
+	 cout << "                       PRODUCTO ACTUAL  (" << indice << ")            " << endl;
+	 cout << endl;
+     cout << "Color   : " << arr[indice-1].color   << endl;
+     cout << "Talla   : " << arr[indice-1].talla   << endl;
+     cout << "Marca   : " << arr[indice-1].marca   << endl;
+     cout << "Precio  : " << arr[indice-1].precio  << endl;
+     cout << "Cantidad: " << arr[indice-1].cantidad<< endl;
+     cout << endl;
+     cout << "---------------------------------------------------------------------"<< endl;
+     cout << endl;
+
+	 cout << "               INGRESE LOS NUEVOS DATOS DEL PRODUCTO                 " << endl;
+	 cout << endl;
+	 cout << "Nuevo color   : ";
+	 cin  >> arr[indice-1].color;
+	 cout << "Nueva talla   : ";
+	 cin  >> arr[indice-1].talla;
+	 cout << "Nueva marca   : ";
+	 cin  >> arr[indice-1].marca;
+	 cout << "Nuevo precio  : ";
+	 cin  >> arr[indice-1].precio;
+	 cout << "Nueva cantidad: ";
+	 cin  >> arr[indice-1].cantidad;
+	 cout << endl;
+	 system("cls");
+	 cout << "\n         EL PRODUCTO HA SIDO ACTUALIZADO CORRECTAMENTE               " << endl;
+	
+	
+}
+void actualizar_balones(balones arr[], int &n6, int indice ){
+	
+	if (indice <0|| indice > n6 ){
+	cout << "              El indice no existe en el sistema.                      " << endl;
+	return;
+	}
+
+	 cout << endl;
+	 cout << "                      PRODUCTO ACTUAL  (" << indice << ")             " << endl;
+	 cout << endl;
+     cout << "Color   : " << arr[indice-1].color    << endl;
+     cout << "Tamaño  : " << arr[indice-1].tamano   << endl;
+     cout << "Marca   : " << arr[indice-1].marca    << endl;
+     cout << "Precio  : " << arr[indice-1].precio   << endl;
+     cout << "Cantidad: " << arr[indice-1].cantidad << endl;
+     cout << endl;
+     cout << "---------------------------------------------------------------------"<< endl;
+     cout << endl;
+
+	 cout << "                INGRESE LOS NUEVOS DATOS DEL PRODUCTO                " << endl;
+	 cout << endl;
+	 cout << "Nuevo color    : ";
+	 cin  >> arr[indice-1].color;
+	 cout << "Nuevo tamaño   : ";
+	 cin  >> arr[indice-1].tamano;
+	 cout << "Nueva marca    : ";
+	 cin  >> arr[indice-1].marca;
+	 cout << "Nuevo precio   : ";
+	 cin  >> arr[indice-1].precio;
+	 cout << "Nueva cantidad : ";
+	 cin  >> arr[indice-1].cantidad;
+	 cout << endl;
+	 system("cls");
+	 cout << "\n          EL PRODUCTO HA SIDO ACTUALIZADO CORRECTAMENTE               " << endl;	
+}
