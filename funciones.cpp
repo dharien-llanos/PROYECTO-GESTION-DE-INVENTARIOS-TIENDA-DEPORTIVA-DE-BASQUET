@@ -476,3 +476,32 @@ void eliminar_zapatillas(zapatillas arr[], int &n3)
 	}
 	n3--;
 }
+void eliminar_medias(medias arr[], int &n5)
+{
+	int borrar;
+	cout<<"ingrese el numero del producto a eliminar:"; cin>>borrar;
+	for(int i=borrar; i<n5; i++)
+	{
+		arr[i-1].color=arr[i].color;
+		arr[i-1].talla=arr[i].talla;
+		arr[i-1].marca=arr[i].marca;
+		arr[i-1].precio=arr[i].precio;
+		arr[i-1].cantidad=arr[i].cantidad;
+	}
+	n5--;
+}
+
+void eliminar_balones(balones arr[], int &n6)
+{
+	int borrar;
+	cout<<"ingrese el numero del producto a eliminar:"; cin>>borrar;
+	for(int i=borrar; i<n6; i++)
+	{
+		arr[i-1].color=arr[i].color;
+		arr[i-1].tamano=arr[i].tamano;
+		arr[i-1].marca=arr[i].marca;
+		arr[i-1].precio=arr[i].precio;
+		arr[i-1].cantidad=arr[i].cantidad;
+	}
+	n6--;
+}
