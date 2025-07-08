@@ -567,3 +567,34 @@ void registar_ventas(ventas arr1[], shorts arr2[], int &n2, int &v1, int &cont2)
 	}
 	
 }
+void registar_ventas(ventas arr1[], zapatillas arr2[], int &n3, int &v1, int &cont3)
+{
+	int num;
+	int cant;
+	cout<<"Ingrese el numero del producto a vender: "; cin>>num;
+	if(num<1 or num>n3)
+	{
+		system("cls");
+		cout<<"---------------------------------------------------------------------"<<endl;
+		cout<<"                Ingrese un numero valido segun la lista              "<<endl;
+		cout<<"---------------------------------------------------------------------"<<endl;
+	}
+	else
+	{
+	    cout<<"Ingrese la cantidad: "; cin>>cant;
+	    system("cls");
+	    if(arr2[num-1].cantidad<cant)
+		{
+			cout<<"------------------------------------------------------------------------"<<endl;
+			cout<<"                 No cuenta con suficientes productos                    "<<endl;
+			cout<<"------------------------------------------------------------------------"<<endl;
+		}
+		else
+		{
+			arr2[num-1].cantidad=arr2[num-1].cantidad-cant;
+	        arr1[v1].precio_total=arr1[v1].precio_total+(arr2[num-1].precio*cant);
+	        cont3++;
+		}
+	}
+	
+}
