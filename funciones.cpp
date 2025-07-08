@@ -432,3 +432,47 @@ void actualizar_balones(balones arr[], int &n6, int indice ){
 	 system("cls");
 	 cout << "\n          EL PRODUCTO HA SIDO ACTUALIZADO CORRECTAMENTE               " << endl;	
 }
+void eliminar_camisetas(camisetas arr[], int &n1)
+{
+	int borrar;
+	cout<<"ingrese el numero del producto a eliminar:"; cin>>borrar;
+	for(int i=borrar; i<n1; i++)
+	{
+		arr[i-1].modelo=arr[i].modelo;
+		arr[i-1].talla=arr[i].talla;
+		arr[i-1].marca=arr[i].marca;
+		arr[i-1].precio=arr[i].precio;
+		arr[i-1].cantidad=arr[i].cantidad;
+	}
+	n1--;
+}
+
+void eliminar_shorts(shorts arr[], int &n2)
+{
+	int borrar;
+	cout<<"ingrese el numero del producto a eliminar:"; cin>>borrar;
+	for(int i=borrar; i<n2; i++)
+	{
+		arr[i-1].color=arr[i].color;
+		arr[i-1].talla=arr[i].talla;
+		arr[i-1].marca=arr[i].marca;
+		arr[i-1].precio=arr[i].precio;
+		arr[i-1].cantidad=arr[i].cantidad;
+	}
+	n2--;
+}
+
+void eliminar_zapatillas(zapatillas arr[], int &n3)
+{
+	int borrar;
+	cout<<"ingrese el numero del producto a eliminar:"; cin>>borrar;
+	for(int i=borrar; i<n3; i++)
+	{
+		arr[i-1].color=arr[i].color;
+		arr[i-1].talla=arr[i].talla;
+		arr[i-1].marca=arr[i].marca;
+		arr[i-1].precio=arr[i].precio;
+		arr[i-1].cantidad=arr[i].cantidad;
+	}
+	n3--;
+}
