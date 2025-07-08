@@ -215,3 +215,47 @@ void submenu_actualizar_zapatillas(zapatillas zapatillas[], int& n3){
         cout << "\n                    INTENTELO NUEVAMENTE POR FAVOR                   " << endl;
     }
 }
+
+void submenu_actualizar_medias(medias medias[], int& n5){
+	int indice_actualizar;
+	cout << "--------------------------------------------------------------------------------------------" << endl;
+    cout << "                                       ACTUALIZAR MEDIAS                                    " << endl;
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+    mostrar_medias(medias, n5);
+    cout << endl;
+    cout << "____________________________________________________________________________________________" << endl;
+    cout << "\nIngrese el numero del producto a actualizar: ";
+    cin  >> indice_actualizar;
+    cout << "_____________________________________________________________________" << endl;
+    cout << endl;
+    system("cls");
+    if (indice_actualizar >= 0 && indice_actualizar <= n5){
+        actualizar_medias(medias, n5, indice_actualizar);
+    } else {
+        cout << "_______________________________________________________________________" << endl;
+        cout << "\n       El NUMERO QUE INGRESO NO EXISTE EN EL SISTEMA ACTUALMENTE     " << endl;
+        cout << "\n                    INTENTELO NUEVAMENTE POR FAVOR                   " << endl;
+    }	
+}
+
+void submenu_actualizar_balones(balones balones[], int& n6){
+	int indice_actualizar;
+	cout << "--------------------------------------------------------------------------------------------" << endl;
+    cout << "                                       ACTUALIZAR BALONES                                   " << endl;
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+    mostrar_balones(balones, n6);
+    cout << endl,
+    cout << "____________________________________________________________________________________________" << endl;
+    cout << "\nIngrese el numero del producto a actualizar: ";
+    cin >> indice_actualizar;
+    cout << "_____________________________________________________________________" << endl;
+    cout << endl;
+    system("cls");
+    if (indice_actualizar >= 0 && indice_actualizar <= n6){
+    actualizar_balones(balones, n6, indice_actualizar);
+    } else {
+        cout << "_______________________________________________________________________" << endl;
+        cout << "\n       El NUMERO QUE INGRESO NO EXISTE EN EL SISTEMA ACTUALMENTE     " << endl;
+        cout << "\n                    INTENTELO NUEVAMENTE POR FAVOR                   " << endl;
+    }
+}
