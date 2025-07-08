@@ -171,3 +171,47 @@ void submenu_actualizar_camisetas(camisetas camiseta[], int& n1){
         cout << "\n                    INTENTELO NUEVAMENTE POR FAVOR                   " << endl;
     }
 }
+
+void submenu_actualizar_shorts(shorts pantalon_corto[], int& n2) {
+    int indice_actualizar;
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+    cout << "                                       ACTUALIZAR SHORTS                                    " << endl;
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+    mostrar_shorts(pantalon_corto, n2);
+    cout << endl;
+    cout << "____________________________________________________________________________________________" << endl;
+    cout << "\nIngrese el numero del producto a actualizar: ";
+    cin >> indice_actualizar;
+    cout << "_____________________________________________________________________" << endl;
+    cout << endl;
+    system("cls");
+    if (indice_actualizar >= 0 && indice_actualizar <= n2){
+        actualizar_shorts(pantalon_corto, n2, indice_actualizar);
+    } else {
+        cout << "_______________________________________________________________________" << endl;
+        cout << "\n       El NUMERO QUE INGRESO NO EXISTE EN EL SISTEMA ACTUALMENTE     " << endl;
+        cout << "\n                    INTENTELO NUEVAMENTE POR FAVOR                   " << endl;  
+    }
+}
+
+void submenu_actualizar_zapatillas(zapatillas zapatillas[], int& n3){
+	int indice_actualizar;
+	cout << "--------------------------------------------------------------------------------------------" << endl;
+    cout << "                                       ACTUALIZAR ZAPATILLAS                                " << endl;
+    cout << "--------------------------------------------------------------------------------------------" << endl;
+    mostrar_zapatillas( zapatillas, n3);
+    cout << endl;
+    cout << "____________________________________________________________________________________________" << endl;
+    cout << "\nIngrese el numero del producto a actualizar: ";
+    cin  >> indice_actualizar;
+    cout << "_____________________________________________________________________" << endl;
+    cout << endl;
+    system("cls");
+    if (indice_actualizar >= 0 && indice_actualizar <= n3){
+        actualizar_zapatillas(zapatillas, n3, indice_actualizar);
+    } else {
+        cout << "_______________________________________________________________________" << endl;
+        cout << "\n       El NUMERO QUE INGRESO NO EXISTE EN EL SISTEMA ACTUALMENTE     " << endl;
+        cout << "\n                    INTENTELO NUEVAMENTE POR FAVOR                   " << endl;
+    }
+}
