@@ -700,3 +700,73 @@ void producto_mas_vendido(int &cont1, int &cont2, int &cont3, int &cont4, int &c
 	}
 	
 }
+void historial_ventas(ventas arr[], int &v1)
+{
+	for(int i=0; i<v1; i++)
+	{
+		cout<<"VENTA"<<i+1<<": S/. ";
+		cout<<arr[i].precio_total<<endl;
+	}
+}
+
+double dinero_acumulado(ventas arr[], int &v1)
+{
+	double suma=0;
+	for(int i=0; i<v1; i++)
+	{
+		suma=suma+arr[i].precio_total;
+	}
+	return suma;
+}
+
+
+
+void mostrar_menu_ordenar( ){
+	cout << "---------------------------------------------------------------------" << endl;
+    cout << "                       ORDENAR PRODUCTOS                             " << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    cout << "1. Camisetas" << endl;
+    cout << "2. Shorts" << endl;
+    cout << "3. Zapatillas" << endl;
+    cout << "4. Canilleras" << endl;
+    cout << "5. Medias" << endl;
+    cout << "6. Balones" << endl;
+    cout << "0. Atrás" << endl;
+    cout << "\n___________________________________________________________________" << endl;
+}
+
+bool comparar_camisetas(const camisetas &a, const camisetas &b){
+    return a.modelo < b.modelo;
+}
+void ordenar_camisetas(camisetas camiseta[], int &n1) {
+    for (int i = 0; i < n1 - 1; i++) {
+        for (int j = 0; j < n1 - i - 1; j++) {
+            if (comparar_camisetas(camiseta[j + 1], camiseta[j])) {
+                camisetas temp = camiseta[j];
+                camiseta[j] = camiseta[j + 1];
+                camiseta[j + 1] = temp;
+            }
+        }
+    }
+}
+void mostrar_camisetas_ordenadas( camisetas camiseta[], int &n1) {
+    cout << "_____________________________________________________________________" << endl;
+    cout << "\n           LISTA DE CAMISETAS ORDEANDAS ALFABETICAMENTE           " << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    cout << left << setw(15) << "MODELO" 
+         << setw(10) << "TALLA" 
+         << setw(15) << "MARCA" 
+         << setw(10) << "PRECIO" 
+         << setw(10) << "CANTIDAD" << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    
+    for (int i = 0; i < n1; i++) {
+        cout << left << setw(15) << camiseta[i].modelo 
+             << setw(10) << camiseta[i].talla
+             << setw(15) << camiseta[i].marca
+             << setw(10) << camiseta[i].precio
+             << setw(10) << camiseta[i].cantidad << endl;
+    }
+    
+    cout << "_____________________________________________________________________" << endl;
+}
