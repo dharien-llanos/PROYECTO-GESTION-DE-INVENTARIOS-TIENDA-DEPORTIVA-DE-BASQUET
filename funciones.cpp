@@ -933,3 +933,104 @@ std::string convertir_caracter(const std::string& palabra){
 	}
 	return resultado;
 }
+void buscar_camisetas(camisetas camiseta[],int &n1) {
+    string producto_buscado;
+    cout << "\n      INGRESE EL MODELO DEL PRODUCTO QUE DESEA BUSCAR        "<<endl;
+    cout << "\nModelo : ";
+    cin.ignore();
+    getline(cin, producto_buscado);
+    cout << "---------------------------------------------------------------------"<<endl;
+
+    producto_buscado = convertir_caracter(producto_buscado);
+
+    bool encontrado = false;
+    for (int i = 0; i < n1 ; i++) {
+        string nombre_producto= camiseta[i].modelo;
+        nombre_producto = convertir_caracter(nombre_producto);
+        
+        if (nombre_producto == producto_buscado) {
+            cout << "\nPRODUCTO ENCONTRADO \n";
+            cout << "\nMODELO: "  << camiseta[i].modelo   << endl;
+            cout << "\nTALLA: "   << camiseta[i].talla     << endl;
+            cout << "\nMARCA: "   << camiseta[i].marca    << endl;
+            cout << "\nPRECIO: "  << camiseta[i].precio   << endl;
+            cout << "\nCANTIDAD: "<< camiseta[i].cantidad << endl;
+            cout << "\n_____________________________________________________________________"<< endl;
+            encontrado = true;
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        cout << "\n EL PRODUCTO QUE BUSCA NO EXISTE EN EL SISTEMA.\n";
+        cout << "_______________________________________________________________"<<endl;
+    }
+}
+
+
+void buscar_shorts(shorts pantalon_corto[], int &n2) {
+    string producto_buscado;
+    cout << "\n      INGRESE EL COLOR DEL PRODUCTO QUE DESEA BUSCAR        "<<endl;
+    cout << "\nColor : ";
+    cin.ignore();
+    getline(cin, producto_buscado);
+    cout << "----------------------------------------------------------------"<<endl;
+
+    producto_buscado = convertir_caracter(producto_buscado);
+
+    bool encontrado = false;
+    for (int i = 0; i < n2; i++) {
+        string nombre_producto = pantalon_corto[i].color;
+        nombre_producto = convertir_caracter(nombre_producto);
+        
+        if (nombre_producto == producto_buscado) {
+            cout << "\nPRODUCTO ENCONTRADO \n";
+            cout << "\nCOLOR: "   << pantalon_corto[i].color    << endl;
+            cout << "\nTALLA: "   << pantalon_corto[i].talla    << endl;
+            cout << "\nMARCA: "   << pantalon_corto[i].marca    << endl;
+            cout << "\nPRECIO: "  << pantalon_corto[i].precio   << endl;
+            cout << "\nCANTIDAD: "<< pantalon_corto[i].cantidad << endl;
+            cout << "\n________________________________________________________"<< endl;
+            encontrado = true;
+            break;
+        }
+    }
+    if (!encontrado) {
+        cout << "\n EL PRODUCTO QUE BUSCA NO EXISTE EN EL SISTEMA.\n";
+        cout << "_______________________________________________________________"<<endl;
+    }
+}
+
+void buscar_zapatillas(zapatillas calzado[], int &n3) {
+    string producto_buscado;
+    cout << "\n      INGRESE EL COLOR DEL PRODUCTO QUE DESEA BUSCAR        "<<endl;
+    cout << "\nColor : ";
+    cin.ignore();
+    getline(cin, producto_buscado);
+    cout << "----------------------------------------------------------------"<<endl;
+
+    producto_buscado = convertir_caracter(producto_buscado);
+
+    bool encontrado = false;
+    for (int i = 0; i < n3; i++) {
+        string nombre_producto= calzado[i].color;
+        nombre_producto = convertir_caracter(nombre_producto);
+        
+        if (nombre_producto == producto_buscado) {
+            cout << "\nPRODUCTO ENCONTRADO \n";
+            cout << "\nCOLOR: "   << calzado[i].color    << endl;
+            cout << "\nTALLA: "   << calzado[i].talla    << endl;
+            cout << "\nMARCA: "   << calzado[i].marca    << endl;
+            cout << "\nPRECIO: "  << calzado[i].precio   << endl;
+            cout << "\nCANTIDAD: "<< calzado[i].cantidad << endl;
+            cout << "\n________________________________________________________"<< endl;
+            encontrado = true;
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        cout << "\n EL PORDUCTO QUE BUSCA NO EXISTE EN EL SISTEMA.\n";
+        cout << "_______________________________________________________________"<<endl;
+    }
+}
