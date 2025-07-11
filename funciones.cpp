@@ -770,3 +770,37 @@ void mostrar_camisetas_ordenadas( camisetas camiseta[], int &n1) {
     
     cout << "_____________________________________________________________________" << endl;
 }
+bool comparar_shorts(const shorts &a, const shorts &b) {
+    return a.color < b.color;
+}
+void ordenar_shorts(shorts pantalon_corto[], int &n2) {
+    for (int i = 0; i < n2 - 1; i++) {
+        for (int j = 0; j < n2 - i - 1; j++) {
+            if (comparar_shorts(pantalon_corto[j + 1], pantalon_corto[j])) {
+                shorts temp = pantalon_corto[j];
+                pantalon_corto[j] = pantalon_corto[j + 1];
+                pantalon_corto[j + 1] = temp;
+            }
+        }
+    }
+}
+void mostrar_shorts_ordenados(shorts pantalon_corto[], int &n2){
+	cout << "_____________________________________________________________________" << endl;
+    cout << "\n           LISTA DE SHORTS ORDENADOS ALFABETICAMENTE               " << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    cout << left << setw(15) << "COLOR" 
+         << setw(10) << "TALLA" 
+         << setw(15) << "MARCA" 
+         << setw(10) << "PRECIO" 
+         << setw(10) << "CANTIDAD" << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    
+    for (int i = 0; i < n2; i++) {
+        cout << left << setw(15) << pantalon_corto[i].color 
+             << setw(10) << pantalon_corto[i].talla
+             << setw(15) << pantalon_corto[i].marca
+             << setw(10) << pantalon_corto[i].precio
+             << setw(10) << pantalon_corto[i].cantidad << endl;
+    }
+    cout << "_____________________________________________________________________" << endl;
+}
