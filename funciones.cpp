@@ -804,3 +804,72 @@ void mostrar_shorts_ordenados(shorts pantalon_corto[], int &n2){
     }
     cout << "_____________________________________________________________________" << endl;
 }
+bool comparar_zapatillas(const zapatillas &a, const zapatillas &b) {
+	return a.color < b.color;
+}
+void ordenar_zapatillas(zapatillas calzado [], int &n3) {
+	for (int i =0 ; i < n3-1; i++){
+		for (int j =0 ; j < n3 - i - 1; j++){
+			if (comparar_zapatillas(calzado[j+1], calzado[j])) {
+				zapatillas temp = calzado [j];
+				calzado[j] = calzado [j+1];
+				calzado[j+1] = temp;
+			}
+		}
+	}
+}
+void mostrar_zapatillas_ordenadas(zapatillas calzado[], int &n3){
+	cout << "_____________________________________________________________________" << endl;
+    cout << "\n           LISTA DE ZAPATILLAS ORDENADAS ALFABETICAMENTE               " << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    cout << left << setw(15) << "COLOR" 
+         << setw(10) << "TALLA" 
+         << setw(15) << "MARCA" 
+         << setw(10) << "PRECIO" 
+         << setw(10) << "CANTIDAD" << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    
+    for (int i = 0; i < n3; i++) {
+        cout << left << setw(15) << calzado[i].color 
+             << setw(10) << calzado[i].talla
+             << setw(15) << calzado[i].marca
+             << setw(10) << calzado[i].precio
+             << setw(10) << calzado[i].cantidad << endl;
+    }
+    cout << "_____________________________________________________________________" << endl;
+}
+
+bool comparar_medias (const medias &a, const medias &b){
+	return a.color < b.color;
+}
+void ordenar_medias ( medias media_larga [], int & n5){
+	for (int i =0 ; i < n5-1; i++){
+		for (int j =0 ; j < n5 - i - 1; j++){
+			if (comparar_medias(media_larga[j+1], media_larga[j])) {
+				medias temp = media_larga [j];
+				media_larga[j]  = media_larga [j+1];
+				media_larga[j+1] = temp;
+			}
+		}
+	}
+}
+void mostrar_medias_ordenadas ( medias media_larga [], int &n5) {
+	cout << "_____________________________________________________________________" << endl;
+    cout << "\n           LISTA DE MEDIAS ORDENADAS ALFABETICAMENTE               " << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    cout << left << setw(15) << "COLOR" 
+         << setw(10) << "TALLA" 
+         << setw(15) << "MARCA" 
+         << setw(10) << "PRECIO" 
+         << setw(10) << "CANTIDAD" << endl;
+    cout << "---------------------------------------------------------------------" << endl;
+    
+    for (int i = 0; i < n5; i++) {
+        cout << left << setw(15) << media_larga[i].color 
+             << setw(10) << media_larga[i].talla
+             << setw(15) << media_larga[i].marca
+             << setw(10) << media_larga[i].precio
+             << setw(10) << media_larga[i].cantidad << endl;
+    }
+    cout << "_____________________________________________________________________" << endl;
+}
