@@ -1030,6 +1030,38 @@ void buscar_zapatillas(zapatillas calzado[], int &n3) {
     }
 
     if (!encontrado) {
+        cout << "\n EL PRODUCTO QUE BUSCA NO EXISTE EN EL SISTEMA.\n";
+        cout << "_______________________________________________________________"<<endl;
+    }
+}
+void buscar_medias(medias media_larga[], int &n5) {
+    string producto_buscado;
+    cout << "\n      INGRESE EL COLOR DEL PRODUCTO QUE DESEA BUSCAR        "<<endl;
+    cout << "\nColor : ";
+    cin.ignore();
+    getline(cin, producto_buscado);
+    cout << "----------------------------------------------------------------"<<endl;
+
+    producto_buscado = convertir_caracter(producto_buscado);
+
+    bool encontrado = false;
+    for (int i = 0; i < n5 ; i++) {
+        string nombre_producto= media_larga[i].color;
+        nombre_producto = convertir_caracter(nombre_producto);
+        
+        if (nombre_producto == producto_buscado) {
+            cout << "\nPRODUCTO ENCONTRADO \n";
+            cout << "\nCOLOR: "   << media_larga[i].color    << endl;
+            cout << "\nTALLA: "   << media_larga[i].talla    << endl;
+            cout << "\nMARCA: "   << media_larga[i].marca    << endl;
+            cout << "\nPRECIO: "  << media_larga[i].precio   << endl;
+            cout << "\nCANTIDAD: "<< media_larga[i].cantidad << endl;
+            cout << "\n________________________________________________________"<< endl;
+            encontrado = true;
+            break;
+        }
+    }
+    if (!encontrado) {
         cout << "\n EL PORDUCTO QUE BUSCA NO EXISTE EN EL SISTEMA.\n";
         cout << "_______________________________________________________________"<<endl;
     }
