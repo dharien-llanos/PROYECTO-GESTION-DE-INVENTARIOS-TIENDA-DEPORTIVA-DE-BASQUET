@@ -1062,7 +1062,39 @@ void buscar_medias(medias media_larga[], int &n5) {
         }
     }
     if (!encontrado) {
-        cout << "\n EL PORDUCTO QUE BUSCA NO EXISTE EN EL SISTEMA.\n";
+        cout << "\n EL PRODUCTO QUE BUSCA NO EXISTE EN EL SISTEMA.\n";
+        cout << "_______________________________________________________________"<<endl;
+    }
+}
+void buscar_balones(balones pelota[], int &n6){
+    string producto_buscado;
+    cout << "\n      INGRESE EL COLOR DEL PRODUCTO QUE DESEA BUSCAR        "<<endl;
+    cout << "\nColor : ";
+    cin.ignore();
+    getline(cin, producto_buscado);
+    cout << "----------------------------------------------------------------"<<endl;
+
+    producto_buscado = convertir_caracter(producto_buscado);
+
+    bool encontrado = false;
+    for (int i = 0; i < n6 ; i++) {
+        string nombre_producto= pelota[i].color;
+        nombre_producto = convertir_caracter(nombre_producto);
+        
+        if (nombre_producto == producto_buscado) {
+            cout << "\nPRODUCTO ENCONTRADO \n";
+            cout << "\nCOLOR: "    << pelota[i].color    << endl;
+            cout << "\nTAMAÑO: "   << pelota[i].tamano   << endl;
+            cout << "\nMARCA: "    << pelota[i].marca    << endl;
+            cout << "\nPRECIO: "   << pelota[i].precio   << endl;
+            cout << "\nCANTIDAD: " << pelota[i].cantidad << endl;
+            cout << "\n________________________________________________________"<< endl;
+            encontrado = true;
+            break;
+        }
+    }
+    if (!encontrado) {
+        cout << "\n EL PRODUCTO QUE BUSCA NO EXISTE EN EL SISTEMA.\n";
         cout << "_______________________________________________________________"<<endl;
     }
 }
