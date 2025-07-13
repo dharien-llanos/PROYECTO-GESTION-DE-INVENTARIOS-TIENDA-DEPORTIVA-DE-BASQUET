@@ -58,4 +58,16 @@ medias media_larga[tam]={
     {"Morado", "L", "Nike", 18.00, 5},
     {"Celeste", "M", "Adidas", 16.00, 9},
     {"Naranja", "S", "Nike", 17.00, 10}
-}
+};
+balones pelota[tam]={
+{"Naranja", 7, "Spalding", 90.00, 10},
+    {"MarrÃ³n", 6, "Wilson", 85.00, 9},
+    {"Negro", 5, "Nike", 75.00, 8},
+    {"Blanco", 7, "Molten", 95.00, 7},
+    {"Gris", 6, "Spalding", 88.00, 6},
+    {"Rojo", 5, "Wilson", 82.00, 8},
+    {"Azul", 7, "Jordan", 100.00, 5},
+    {"Verde", 6, "Nike", 87.00, 9},
+    {"Morado", 5, "Spalding", 92.00, 6},
+    {"Celeste", 7, "Wilson", 89.00, 7}
+};
