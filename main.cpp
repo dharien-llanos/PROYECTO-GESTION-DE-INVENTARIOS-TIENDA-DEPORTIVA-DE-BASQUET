@@ -36,16 +36,16 @@ shorts pantalon_corto[tam]={
     {"Celeste", "M", "Adidas", 57.00, 9}
 };
 zapatillas calzado[tam]={
-{"Negro", 44, "Jordan", 300.00, 5},
-    {"Rojo", 42, "Nike", 320.00, 4},
-    {"Blanco", 41, "Under Armour", 280.00, 6},
-    {"Azul", 45, "Nike", 310.00, 3},
-    {"Verde", 43, "Adidas", 275.00, 7},
-    {"Morado", 46, "Jordan", 330.00, 5},
-    {"Gris", 40, "Nike", 295.00, 6},
-    {"Amarillo", 44, "Under Armour", 305.00, 4},
-    {"Celeste", 42, "Nike", 290.00, 5},
-    {"Naranja", 41, "Jordan", 325.00, 4}
+{"Negro", "44", "Jordan", 300.00, 5},
+    {"Rojo", "42", "Nike", 320.00, 4},
+    {"Blanco", "41", "Under Armour", 280.00, 6},
+    {"Azul", "45", "Nike", 310.00, 3},
+    {"Verde", "43", "Adidas", 275.00, 7},
+    {"Morado", "46", "Jordan", 330.00, 5},
+    {"Gris", "40", "Nike", 295.00, 6},
+    {"Amarillo", "44", "Under Armour", 305.00, 4},
+    {"Celeste", "42", "Nike", 290.00, 5},
+    {"Naranja", "41", "Jordan", 325.00, 4}
 };
 medias media_larga[tam]={
 {"Negro", "M", "Nike", 18.00, 10},
@@ -60,14 +60,14 @@ medias media_larga[tam]={
     {"Naranja", "S", "Nike", 17.00, 10}
 };
 balones pelota[tam]={
-{"Naranja", 7, "Spalding", 90.00, 10},
-    {"MarrÃ³n", 6, "Wilson", 85.00, 9},
-    {"Negro", 5, "Nike", 75.00, 8},
-    {"Blanco", 7, "Molten", 95.00, 7},
-    {"Gris", 6, "Spalding", 88.00, 6},
-    {"Rojo", 5, "Wilson", 82.00, 8},
-    {"Azul", 7, "Jordan", 100.00, 5},
-    {"Verde", 6, "Nike", 87.00, 9},
-    {"Morado", 5, "Spalding", 92.00, 6},
-    {"Celeste", 7, "Wilson", 89.00, 7}
+{"Naranja", "7", "Spalding", 90.00, 10},
+    {"Marron", "6", "Wilson", 85.00, 9},
+    {"Negro", "5", "Nike", 75.00, 8},
+    {"Blanco", "7", "Molten", 95.00, 7},
+    {"Gris", "6", "Spalding", 88.00, 6},
+    {"Rojo", "5", "Wilson", 82.00, 8},
+    {"Azul", "7", "Jordan", 100.00, 5},
+    {"Verde", "6", "Nike", 87.00, 9},
+    {"Morado", "5", "Spalding", 92.00, 6},
+    {"Celeste", "7", "Wilson", 89.00, 7}
 };
