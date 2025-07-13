@@ -46,4 +46,16 @@ zapatillas calzado[tam]={
     {"Amarillo", 44, "Under Armour", 305.00, 4},
     {"Celeste", 42, "Nike", 290.00, 5},
     {"Naranja", 41, "Jordan", 325.00, 4}
+};
+medias media_larga[tam]={
+{"Negro", "M", "Nike", 18.00, 10},
+    {"Blanco", "S", "Under Armour", 17.00, 9},
+    {"Rojo", "L", "Nike", 19.00, 8},
+    {"Azul", "M", "Adidas", 16.00, 7},
+    {"Verde", "L", "Nike", 18.00, 6},
+    {"Amarillo", "S", "Jordan", 20.00, 8},
+    {"Gris", "M", "Under Armour", 17.00, 6},
+    {"Morado", "L", "Nike", 18.00, 5},
+    {"Celeste", "M", "Adidas", 16.00, 9},
+    {"Naranja", "S", "Nike", 17.00, 10}
 }
