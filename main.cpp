@@ -23,3 +23,15 @@ camisetas camiseta[tam]={
     {"Mavericks", "M", "Nike", 110.00, 7},
     {"Clippers", "L", "Jordan", 125.00, 6}
 };
+shorts pantalon_corto[tam]={
+{"Negro", "M", "Nike", 60.00, 8},
+    {"Blanco", "L", "Under Armour", 55.00, 7},
+    {"Rojo", "S", "Nike", 58.00, 9},
+    {"Azul", "M", "Jordan", 65.00, 6},
+    {"Verde", "L", "Adidas", 62.00, 5},
+    {"Morado", "S", "Nike", 59.00, 8},
+    {"Gris", "M", "Under Armour", 60.00, 6},
+    {"Amarillo", "L", "Nike", 64.00, 4},
+    {"Naranja", "S", "Jordan", 63.00, 7},
+    {"Celeste", "M", "Adidas", 57.00, 9}
+}
