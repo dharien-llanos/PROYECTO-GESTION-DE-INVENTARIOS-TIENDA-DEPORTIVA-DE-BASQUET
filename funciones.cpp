@@ -145,7 +145,7 @@ void mostar_menu_principal( ){
     cout << "3. Zapatillas" << endl;
     cout << "4. Medias" << endl;
     cout << "5. Balones" << endl;
-    cout << "0. Atrás" << endl;
+    cout << "0. Atras" << endl;
     cout << "\n_____________________________________________________________________" << endl;
 }
 
@@ -731,7 +731,7 @@ void mostrar_menu_ordenar( ){
     cout << "4. Canilleras" << endl;
     cout << "5. Medias" << endl;
     cout << "6. Balones" << endl;
-    cout << "0. Atrás" << endl;
+    cout << "0. Atras" << endl;
     cout << "\n___________________________________________________________________" << endl;
 }
 
@@ -920,7 +920,7 @@ void mostrar_menu_buscar_producto( ){
     cout << "4. Canilleras" << endl;
     cout << "5. Medias" << endl;
     cout << "6. Balones" << endl;
-    cout << "0. Atrás" << endl;
+    cout << "0. Atras" << endl;
     cout << "\n___________________________________________________________________" << endl;
 }
 
