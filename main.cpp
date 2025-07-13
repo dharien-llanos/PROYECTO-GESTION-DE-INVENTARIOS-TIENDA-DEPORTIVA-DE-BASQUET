@@ -34,4 +34,16 @@ shorts pantalon_corto[tam]={
     {"Amarillo", "L", "Nike", 64.00, 4},
     {"Naranja", "S", "Jordan", 63.00, 7},
     {"Celeste", "M", "Adidas", 57.00, 9}
+};
+zapatillas calzado[tam]={
+{"Negro", 44, "Jordan", 300.00, 5},
+    {"Rojo", 42, "Nike", 320.00, 4},
+    {"Blanco", 41, "Under Armour", 280.00, 6},
+    {"Azul", 45, "Nike", 310.00, 3},
+    {"Verde", 43, "Adidas", 275.00, 7},
+    {"Morado", 46, "Jordan", 330.00, 5},
+    {"Gris", 40, "Nike", 295.00, 6},
+    {"Amarillo", 44, "Under Armour", 305.00, 4},
+    {"Celeste", 42, "Nike", 290.00, 5},
+    {"Naranja", 41, "Jordan", 325.00, 4}
 }
