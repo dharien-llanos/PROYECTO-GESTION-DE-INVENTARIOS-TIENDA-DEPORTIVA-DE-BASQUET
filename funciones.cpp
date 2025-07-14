@@ -397,6 +397,7 @@ void actualizar_medias(medias arr[], int &n5, int indice){
 	
 	
 }
+//
 void actualizar_balones(balones arr[], int &n6, int indice ){
 	
 	if (indice <0|| indice > n6 ){
@@ -680,12 +681,7 @@ void producto_mas_vendido(int &cont1, int &cont2, int &cont3, int &cont4, int &c
 		cout<<"PRODUCTO MAS VENDIDO: ZAPATILLAS "<<endl;
 		cout<<"N. de clientes: "<<cont3<<endl;
 	}
-	if(cont4>=cont1 and cont4>=cont2 and cont4>=cont3 and cont4>=cont5 and cont4>=cont6)
-	{
-		cout<<"--------------------------------------------------------------------------------"<<endl;
-		cout<<"PRODUCTO MAS VENDIDO: CANILLERAS "<<endl;
-		cout<<"N. de clientes: "<<cont4<<endl;
-	}
+	
 	if(cont5>=cont1 and cont5>=cont2 and cont5>=cont3 and cont5>=cont4 and cont5>=cont6)
 	{
 		cout<<"--------------------------------------------------------------------------------"<<endl;
@@ -770,6 +766,7 @@ void mostrar_camisetas_ordenadas( camisetas camiseta[], int &n1) {
     
     cout << "_____________________________________________________________________" << endl;
 }
+
 bool comparar_shorts(const shorts &a, const shorts &b) {
     return a.color < b.color;
 }
@@ -784,6 +781,7 @@ void ordenar_shorts(shorts pantalon_corto[], int &n2) {
         }
     }
 }
+
 void mostrar_shorts_ordenados(shorts pantalon_corto[], int &n2){
 	cout << "_____________________________________________________________________" << endl;
     cout << "\n           LISTA DE SHORTS ORDENADOS ALFABETICAMENTE               " << endl;
@@ -804,6 +802,7 @@ void mostrar_shorts_ordenados(shorts pantalon_corto[], int &n2){
     }
     cout << "_____________________________________________________________________" << endl;
 }
+
 bool comparar_zapatillas(const zapatillas &a, const zapatillas &b) {
 	return a.color < b.color;
 }
@@ -818,6 +817,7 @@ void ordenar_zapatillas(zapatillas calzado [], int &n3) {
 		}
 	}
 }
+
 void mostrar_zapatillas_ordenadas(zapatillas calzado[], int &n3){
 	cout << "_____________________________________________________________________" << endl;
     cout << "\n           LISTA DE ZAPATILLAS ORDENADAS ALFABETICAMENTE               " << endl;
@@ -839,6 +839,7 @@ void mostrar_zapatillas_ordenadas(zapatillas calzado[], int &n3){
     cout << "_____________________________________________________________________" << endl;
 }
 
+
 bool comparar_medias (const medias &a, const medias &b){
 	return a.color < b.color;
 }
@@ -853,6 +854,7 @@ void ordenar_medias ( medias media_larga [], int & n5){
 		}
 	}
 }
+
 void mostrar_medias_ordenadas ( medias media_larga [], int &n5) {
 	cout << "_____________________________________________________________________" << endl;
     cout << "\n           LISTA DE MEDIAS ORDENADAS ALFABETICAMENTE               " << endl;
@@ -873,6 +875,7 @@ void mostrar_medias_ordenadas ( medias media_larga [], int &n5) {
     }
     cout << "_____________________________________________________________________" << endl;
 }
+
 bool comparar_balones(const balones &a, const balones &b) {
     return a.color < b.color;
 }
@@ -887,6 +890,7 @@ void ordenar_balones(balones pelota[], int &n6) {
         }
     }
 }
+
 void mostrar_balones_ordenados (balones pelota[], int &n6){
 	cout << "_____________________________________________________________________" << endl;
     cout << "\n           LISTA DE BALONES ORDENADOS ALFABETICAMENTE               " << endl;
