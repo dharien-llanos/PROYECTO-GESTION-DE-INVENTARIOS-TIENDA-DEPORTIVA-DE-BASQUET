@@ -343,7 +343,7 @@ ventas registrar[tem];
 				registrar[v1].precio_total=0;
             	break;
             case 7:
-				producto_mas_vendido(cont1, cont2, cont3, cont4, cont5, cont6);
+				producto_mas_vendido(cont1, cont2, cont3, cont4, cont5);
 				break;
 			case 8:
 				cout<<"---------------------------------------------------------------------"<<endl;

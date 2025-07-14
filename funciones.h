@@ -47,7 +47,7 @@ void registar_ventas(ventas arr1[], medias arr2[], int &n5, int &v1, int &cont5)
 void registar_ventas(ventas arr1[], balones arr2[], int &n6, int &v1, int &cont6);
 
 
-void producto_mas_vendido(int &cont1, int &cont2, int &cont3, int &cont4, int &cont5, int &cont6);
+void producto_mas_vendido(int &cont1, int &cont2, int &cont3, int &cont4, int &cont5);
 
 
 void historial_ventas(ventas arr1[], int &v1);
