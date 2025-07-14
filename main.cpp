@@ -366,6 +366,7 @@ ventas registrar[tem];
                     cin  >> producto_buscado;
                     cout << endl;
 		            system("cls");
+		            
                     if (producto_buscado >= 1 or producto_buscado <= 6){
                     	int indice_buscado;
                         switch (producto_buscado){
