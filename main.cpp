@@ -268,7 +268,7 @@ ventas registrar[tem];
                     cout << "6. Mostrar el total" << endl;
                     cout << "0. Atras" << endl;
                     cout << endl;
-                    cout << "\nIngrese su opciÃ³n: "; 
+                    cout << "\nIngrese su opcion: "; 
 					cin>>op;
 					system("cls");
 					switch(op) 
