@@ -222,7 +222,7 @@ ventas registrar[tem];
                     } else {
                     	cout << "_______________________________________________________________________" << endl;
                         cout << "\n                            OPCION INVALIDA                          " << endl;
-				        cout << "\n                    POR FAVOR INREGESE UNA OPCION VALIDA             " << endl;    
+				        cout << "\n                    POR FAVOR INGRESE UNA OPCION VALIDA             " << endl;    
                     }
                 } while (producto_actualizar != 0);
                 break;
@@ -248,7 +248,7 @@ ventas registrar[tem];
                     } else {
                     	cout << "_______________________________________________________________________" << endl;
                         cout << "\n                            OPCION INVALIDA                          " << endl;
-				        cout << "\n                    POR FAVOR INREGESE UNA OPCION VALIDA             " << endl;    
+				        cout << "\n                    POR FAVOR INGRESE UNA OPCION VALIDA             " << endl;    
                     }
                 } while (producto_ordenado != 0);
 				break;
@@ -379,7 +379,7 @@ ventas registrar[tem];
                     } else {
                     	cout << "_______________________________________________________________________" << endl;
                         cout << "\n                            OPCION INVALIDA                          " << endl;
-				        cout << "\n                    POR FAVOR INREGESE UNA OPCION VALIDA             " << endl;    
+				        cout << "\n                    POR FAVOR INGRESE UNA OPCION VALIDA             " << endl;    
                     }
                 } while (producto_buscado != 0);	
 
@@ -394,7 +394,7 @@ ventas registrar[tem];
             default: {
             	cout << "\n_____________________________________________________________________" << endl;
                 cout << "\n                            OPCION INVALIDA                          " << endl;
-				cout << "\n                    POR FAVOR INREGESE UNA OPCION VALIDA             " << endl;
+				cout << "\n                    POR FAVOR INGRESE UNA OPCION VALIDA             " << endl;
                 break;
             }
         }
