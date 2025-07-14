@@ -268,7 +268,7 @@ ventas registrar[tem];
                     cout << "6. Mostrar el total" << endl;
                     cout << "0. Atras" << endl;
                     cout << endl;
-                    cout << "\nIngrese su opciÃ³n: "; 
+                    cout << "\nIngrese su opcion: "; 
 					cin>>op;
 					system("cls");
 					switch(op) 
@@ -366,6 +366,7 @@ ventas registrar[tem];
                     cin  >> producto_buscado;
                     cout << endl;
 		            system("cls");
+		            
                     if (producto_buscado >= 1 or producto_buscado <= 6){
                     	int indice_buscado;
                         switch (producto_buscado){
