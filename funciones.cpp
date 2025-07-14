@@ -3,7 +3,6 @@
 #include"estructuras.h"
 #include<iomanip>
 using namespace std;
-//dharien 
 void mostrar_camisetas(camisetas arr[], int &n1)
 {
     cout<<"N.\t"<<setw(16)<<"MODELO"<<setw(17)<<"TALLA"<<setw(14)<<"MARCA"<<setw(18)<<"PRECIO"<<setw(17)<<"CANTIDAD"<<endl;
@@ -397,7 +396,7 @@ void actualizar_medias(medias arr[], int &n5, int indice){
 	
 	
 }
-//matias 
+
 void actualizar_balones(balones arr[], int &n6, int indice ){
 	
 	if (indice <0|| indice > n6 ){
